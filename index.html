@@ -3,20 +3,29 @@
 <head>
   ...
   <style>
-    /* 既存のスタイルの中に追加してください */
-    .image-frame {
-      width: 150px;       /* 枠の幅 */
-      height: 150px;      /* 枠の高さ */
-      overflow: hidden;   /* はみ出した部分は隠す */
-      border: 1px solid #ccc; /* 枠線はお好みで */
-    }
+  /* 省略 */
 
-    .image-frame img {
-      width: 100%;        /* 枠内に画像を幅いっぱいに */
-      height: auto;       /* 高さは自動調整 */
-      object-fit: contain; /* 枠内に収める */
-    }
-  </style>
+  section {
+    max-width: 800px;
+    margin: 30px auto;
+    padding: 0 20px;
+    box-sizing: border-box;
+  }
+
+  /* 画像枠のスタイルもここに */
+  .image-frame {
+    width: 150px;
+    height: 150px;
+    overflow: hidden;
+    border: 1px solid #ccc;
+  }
+  .image-frame img {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+  }
+</style>
+
 </head>
 
 <body>
