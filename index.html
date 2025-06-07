@@ -1,53 +1,24 @@
 <!DOCTYPE html>
 <html lang="ja">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>まことの自己紹介HP</title>
+  ...
   <style>
-    body {
-      background: #fff;
-      font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
-      color: #333;
-      margin: 0;
-      padding: 0 20px;
+    /* 既存のスタイルの中に追加してください */
+    .image-frame {
+      width: 150px;       /* 枠の幅 */
+      height: 150px;      /* 枠の高さ */
+      overflow: hidden;   /* はみ出した部分は隠す */
+      border: 1px solid #ccc; /* 枠線はお好みで */
     }
-    header {
-      display: flex;
-      align-items: center;
-      padding: 10px 0;
-      border-bottom: 1px solid #ddd;
-    }
-    header img {
-      height: 40px;
-      margin-right: 10px;
-    }
-    nav a {
-      margin-right: 20px;
-      text-decoration: none;
-      color: #1DA1F2; /* Xのブランドカラーに近い */
-      font-weight: bold;
-    }
-    nav a:hover {
-      text-decoration: underline;
-    }
-    section {
-      max-width: 800px;
-      margin: 30px auto;
-    }
-    h2 {
-      border-bottom: 2px solid #1DA1F2;
-      padding-bottom: 5px;
-      margin-bottom: 15px;
-    }
-    footer {
-      text-align: center;
-      font-size: 0.8rem;
-      color: #999;
-      margin: 50px 0 20px;
+
+    .image-frame img {
+      width: 100%;        /* 枠内に画像を幅いっぱいに */
+      height: auto;       /* 高さは自動調整 */
+      object-fit: contain; /* 枠内に収める */
     }
   </style>
 </head>
+
 <body>
   <header>
 <a href="https://x.com/makoto39restart" target="_blank" rel="noopener noreferrer">
@@ -93,10 +64,13 @@
   </section>
 
   <section id="portfolio">
-    <h2>ポートフォリオ</h2>
-<p>2016年カラーミー大賞ノミネート ※都合によりキャプチャーのみ</p>
-  <img src="images/hinemospan.jpg" 
-  </section>
+  <h2>ポートフォリオ</h2>
+  <p>2016年カラーミー大賞ノミネート ※都合によりキャプチャーのみ</p>
+  <div class="image-frame">
+    <img src="images/hinemospan.jpg" alt="hinemospan">
+  </div>
+</section>
+
 
   <section id="contact">
     <h2>お問い合わせ</h2>
