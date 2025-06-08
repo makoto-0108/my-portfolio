@@ -56,23 +56,41 @@
       background-color: #3367d6;
     }
 
-    .x-link {
-      display: inline-flex;
-      align-items: center;
-      color: #1DA1F2;
-      text-decoration: none;
-      font-weight: bold;
-      gap: 8px;
-    }
+   .x-link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center; /* ← 追加 */
+  color: #1DA1F2;
+  text-decoration: none;
+  font-weight: bold;
+  gap: 8px;
+  margin-top: 10px;
+}
 
-    .x-link:hover {
-      text-decoration: underline;
-    }
+.x-link:hover {
+  text-decoration: underline;
+}
 
-    .x-icon {
-      width: 24px;
-      height: 24px;
-    }
+.x-icon {
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+}
+
+/* モバイル用調整 */
+@media (max-width: 768px) {
+  .x-link {
+    flex-direction: row;  /* ← 縦並びをやめる */
+    font-size: 14px;
+    gap: 10px;
+  }
+
+  .x-icon {
+    width: 20px;
+    height: 20px;
+  }
+}
+
 
     .portfolio-image {
       max-width: 80%;
