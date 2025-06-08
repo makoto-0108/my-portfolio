@@ -88,6 +88,37 @@
   box-shadow: 0 4px 8px rgba(0,0,0,0.1);
   border-radius: 4px;
 }
+/* NOTEカード風ウィジェット */
+.note-card {
+  border: 1px solid #ddd;
+  padding: 15px 20px;
+  border-radius: 8px;
+  background-color: #fafafa;
+  margin-top: 20px;
+  transition: background-color 0.3s ease;
+}
+.note-card a {
+  text-decoration: none;
+  color: #333;
+  display: block;
+}
+.note-title {
+  font-size: 18px;
+  font-weight: bold;
+}
+.note-desc {
+  font-size: 14px;
+  margin-top: 8px;
+  color: #555;
+}
+.note-link {
+  color: #1DA1F2;
+  margin-top: 10px;
+  font-weight: bold;
+}
+.note-card:hover {
+  background-color: #f0f8ff;
+}
 
   </style>
 </head>
@@ -153,6 +184,17 @@
       </a>
     </p>
   </section>
+  <!-- NOTEセクション -->
+<section class="container">
+  <h2>NOTEも更新中です</h2>
+  <div class="note-card">
+    <a href="https://note.com/makoto39restart" target="_blank" rel="noopener noreferrer">
+      <div class="note-title">日々の気づきや言葉の仕事を綴っています</div>
+      <div class="note-desc">フリーランスとしての働き方、文章へのこだわりなどを発信中。</div>
+      <div class="note-link">▶ NOTEのプロフィールを見る</div>
+    </a>
+  </div>
+</section>
 
   <footer class="container" style="text-align:center; padding:20px 0;">
     &copy; 2025 まこと
