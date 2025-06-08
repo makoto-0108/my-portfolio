@@ -2,6 +2,9 @@
 <html lang="ja">
 <head>
   <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>まこと｜webX福祉の自己紹介サイト</title>
+
   <!-- ▼ OG（Open Graph）タグ -->
   <meta property="og:title" content="まことの自己紹介HP" />
   <meta property="og:description" content="奈良で暮らす39歳のフリーランス。文章×テクノロジーで福祉や教育の課題解決を目指しています。" />
@@ -11,10 +14,9 @@
   <meta property="og:site_name" content="まことの自己紹介HP" />
   <meta name="twitter:card" content="summary_large_image" />
 
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>まこと｜webX福祉の自己紹介サイト</title>
-
+  <!-- ▼ Googleフォント -->
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&display=swap" rel="stylesheet" />
+
   <style>
     body {
       font-family: 'Noto Sans JP', sans-serif;
@@ -23,17 +25,34 @@
       margin: 0;
     }
 
+    .main-header {
+      position: relative;
+      text-align: center;
+      color: white;
+    }
+
+    .main-header img {
+      width: 100%;
+      height: auto;
+      object-fit: cover;
+      display: block;
+    }
+
+    .main-header h1 {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      font-size: 2.5rem;
+      background-color: rgba(0, 0, 0, 0.5);
+      padding: 10px 20px;
+      border-radius: 8px;
+    }
+
     .container {
       max-width: 900px;
       margin: 0 auto;
       padding: 0 20px;
-    }
-
-    h2 {
-      font-family: inherit;
-      font-weight: bold;
-      font-size: 1.5rem;
-      margin-bottom: 1rem;
     }
 
     .nav-menu {
@@ -49,6 +68,17 @@
 
     .nav-menu li {
       list-style: none;
+    }
+
+    .portfolio-image {
+      max-width: 80%;
+      height: auto;
+      display: block;
+      margin: 0 auto;
+      background-color: #f0f0f0;
+      padding: 10px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      border-radius: 4px;
     }
 
     .btn-google-form {
@@ -77,43 +107,9 @@
       margin-top: 10px;
     }
 
-    .x-link:hover {
-      text-decoration: underline;
-    }
-
-    #contact {
-      text-align: center;
-    }
-
     .x-icon {
       width: 24px;
       height: 24px;
-      border-radius: 50%;
-    }
-
-    /* モバイル用調整 */
-    @media (max-width: 768px) {
-      .x-link {
-        flex-direction: row;
-        font-size: 14px;
-        gap: 10px;
-      }
-
-      .x-icon {
-        width: 20px;
-        height: 20px;
-      }
-    }
-
-    .portfolio-image {
-      max-width: 80%;
-      height: auto;
-      display: block;
-      margin: 0 auto;
-      background-color: #f0f0f0;
-      padding: 10px;
-      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-      border-radius: 4px;
     }
 
     .note-card {
@@ -152,21 +148,16 @@
       background-color: #f0f8ff;
     }
 
-    header {
-      text-align: center;
-      padding: 20px;
-    }
-
     footer {
       text-align: center;
       padding: 20px 0;
     }
 
-    /* ★ レスポンシブ対応（スマホ・タブレット） */
+    /* モバイル対応 */
     @media (max-width: 768px) {
-      h2 {
-        font-size: 1.2rem;
-        text-align: center;
+      .main-header h1 {
+        font-size: 1.6rem;
+        padding: 6px 12px;
       }
 
       .nav-menu {
@@ -197,107 +188,91 @@
       .note-card {
         padding: 10px 15px;
       }
-
-      .note-title {
-        font-size: 16px;
-      }
-
-      .note-desc {
-        font-size: 13px;
-      }
-
-      .note-link {
-        font-size: 14px;
-      }
-
-      header img {
-        width: 100px;
-        height: 100px;
-      }
-
-      .container {
-        padding: 0 15px;
-      }
     }
   </style>
 </head>
 
 <body>
-  <header>
-    <img src="images/icon.jpg" alt="アイコン" style="width: 150px; height: 150px; border-radius: 50%;" />
-    <nav class="container">
-      <ul class="nav-menu">
-        <li><a href="#about">自己紹介</a></li>
-        <li><a href="#portfolio">ポートフォリオ</a></li>
-        <li><a href="#contact">お問い合わせ</a></li>
-      </ul>
-    </nav>
+  <!-- ヘッダー画像 -->
+  <header class="main-header">
+    <img src="images/header.jpg" alt="Web×福祉のイメージ画像">
+    <h1>Makoto's Portfolio</h1>
   </header>
 
+  <!-- ナビメニュー -->
+  <nav class="container">
+    <ul class="nav-menu">
+      <li><a href="#about">自己紹介</a></li>
+      <li><a href="#portfolio">ポートフォリオ</a></li>
+      <li><a href="#contact">お問い合わせ</a></li>
+    </ul>
+  </nav>
+
+  <!-- 自己紹介 -->
   <section id="about" class="container">
     <h2>自己紹介</h2>
     <p>奈良に暮らす、39歳のフリーランスです。</p>
-    <p>
-      これまで「言葉」を使った仕事を中心に活動してきましたが、現在は
-      <strong>AIフルスタックエンジニア</strong>を目指して、新たな学びに取り組んでいます。
-    </p>
-    <p>きっかけは、福祉分野での実体験。</p>
-    <p>
-      制度や情報が複雑で届きにくい現状に対し、テクノロジーの力で誰かの「困った」を少しでも減らせたら——そんな想いから、コードを書き始めました。
-    </p>
-    <p>
-      現在はHTML/CSSを入り口に、Webアプリ開発やAIの基礎を少しずつ積み重ねています。
-    </p>
-    <p>
-      もともとはフリーライターとして、商品紹介やサービス案内の文章、チラシのコピー制作、個人のブランディングサポートなどを手がけてきました。<br />
-      「その人らしさ」や「自然体の魅力」を言葉で伝えることが得意です。
-    </p>
-    <p>
-      これまでの実績には、通信会社のテレオペ業務で<strong>アップセル表彰</strong>を受けたことや、サプリメントOEM事業で<strong>月商1,000万円</strong>を達成した経験があります。
-    </p>
-    <p>
-      また、フリーランス向けに<strong>「0→1」のブランディングコンサル</strong>を行っていた時期もありました。
-    </p>
-    <p>
-      知人のパン屋さんのネットショップ制作では、素朴で温かな世界観を大切にしながら、Instagramウィジェットを組み込み、サイトに動きを加える工夫を施しました。<br />
-      その結果、<strong>カラーミー大賞にノミネート</strong>されたのは、今でも心に残る出来事です。
-    </p>
-    <p>
-      これからは、「ことば」と「テクノロジー」の両方の視点を活かし、福祉や教育などの分野で役に立てる存在を目指していきます。
-    </p>
-    <p>日々の学びや気づきは、NOTEでも綴っています。</p>
-    <p>ご興味があれば、ぜひのぞいてみてください。</p>
-    <p>
-      👉
-      <a href="https://note.com/makoto39restart" target="_blank" rel="noopener noreferrer">NOTEはこちら</a>
-    </p>
+
+<p>これまで「言葉」を使った仕事を中心に活動してきましたが、現在は<strong>AIフルスタックエンジニア</strong>を目指して、新たな学びに取り組んでいます。</p>
+
+p>きっかけは、福祉分野での実体験。</p>
+<p>制度や情報が複雑で届きにくい現状に対し、テクノロジーの力で誰かの「困った」を少しでも減らせたら——そんな想いから、コードを書き始めました。</p>
+
+<p>現在はHTML/CSSを入り口に、Webアプリ開発やAIの基礎を少しずつ積み重ねています。</p>
+
+<p>もともとはフリーライターとして、商品紹介やサービス案内の文章、チラシのコピー制作、個人のブランディングサポートなどを手がけてきました。</p>
+<p>「その人らしさ」や「自然体の魅力」を言葉で伝えることが得意です。</p>
+
+<p>これまでの実績には、通信会社のテレオペ業務で<strong>アップセル表彰</strong>を受けたことや、サプリメントOEM事業で<strong>月商1,000万円</strong>を達成した経験があります。</p>
+<p>また、フリーランス向けに「0→1」の<strong>ブランディングコンサル</strong>を行っていた時期もありました。</p>
+
+<p>知人のパン屋さんのネットショップ制作では、素朴で温かな世界観を大切にしながら、Instagramウィジェットを組み込み、サイトに動きを加える工夫を施しました。</p>
+<p>その結果、<strong>カラーミー大賞にノミネート</strong>されたのは、今でも心に残る出来事です。</p>
+
+<p>これからは、「ことば」と「テクノロジー」の両方の視点を活かし、福祉や教育などの分野で役に立てる存在を目指していきます。</p>
+
+<p>日々の学びや気づきは、NOTEでも綴っています。</p>
+<p>ご興味があれば、ぜひのぞいてみてください。</p>
+
+
+    <p><a href="https://note.com/makoto39restart" target="_blank">NOTEはこちら
+  </a></p>
   </section>
 
+  <!-- ポートフォリオ -->
   <section id="portfolio" class="container">
     <h2>ポートフォリオ</h2>
-    <p>2016年カラーミー大賞ノミネート ※キャプチャーのみ</p>
-    <div class="image-frame">
-      <img src="images/hinemospan.jpg" class="portfolio-image" alt="ひねもすぱん" />
-    </div>
+    <p>2016年カラーミー大賞ノミネート（キャプチャー）</p>
+    <img src="images/hinemospan.jpg" class="portfolio-image" alt="ひねもすぱん" />
   </section>
 
+  <!-- お問い合わせ -->
   <section id="contact" class="container">
     <h2>お問い合わせ</h2>
-    <p>以下のボタンからお問い合わせください。</p>
-    <a href="https://docs.google.com/forms/d/e/1FAIpQLSfk-fAKwCpL3YBgljheT7fDAppjokkpiCiG1la4qJ9huGhHyA/viewform?usp=dialog" target="_blank" rel="noopener noreferrer" class="btn-google-form">Googleフォームで問い合わせる</a>
+    <p>以下のボタンからお気軽にご連絡ください。</p>
+    <a href="https://docs.google.com/forms/d/e/1FAIpQLSfk-fAKwCpL3YBgljheT7fDAppjokkpiCiG1la4qJ9huGhHyA/viewform?usp=dialog" target="_blank" class="btn-google-form">Googleフォームで問い合わせる</a>
 
-    <p>または、Xでもお気軽にどうぞ！</p>
-    <a href="https://twitter.com/makoto39restart" target="_blank" rel="noopener noreferrer" class="x-link">
-      <svg class="x-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="#1DA1F2" viewBox="0 0 24 24">
-        <path d="M6.94 2h4.26l3.06 5.29L18.5 2h3.6l-5.9 8.11L23 22h-4.26l-3.34-5.75L11.6 22H8l6.29-8.58L6 2z" />
-      </svg>
+    <p>または、Xでもどうぞ！</p>
+    <a href="https://twitter.com/makoto39restart" target="_blank" class="x-link">
+      <svg class="x-icon" xmlns="http://www.w3.org/2000/svg" fill="#1DA1F2" viewBox="0 0 24 24"><path d="M6.94 2h4.26l3.06 5.29L18.5 2h3.6l-5.9 8.11L23 22h-4.26l-3.34-5.75L11.6 22H8l6.29-8.58L6 2z" /></svg>
       @makoto39restart
     </a>
   </section>
 
+  <!-- NOTE紹介 -->
   <section class="container">
     <h2>NOTEも更新中です</h2>
     <div class="note-card">
-      <a href="https://note.com/makoto39restart" target="_blank" rel="noopener noreferrer">
+      <a href="https://note.com/makoto39restart" target="_blank">
         <div class="note-title">日々の気づきや言葉の仕事を綴っています</div>
-        <div class="note-desc">フリーランスとしての働き方、文章へのこだ
+        <div class="note-desc">フリーランスとしての働き方、文章、福祉との関わりなどを発信中</div>
+      </a>
+    </div>
+  </section>
+
+  <!-- フッター -->
+  <footer>
+    <p>&copy; 2025 Makoto. All rights reserved.</p>
+  </footer>
+</body>
+</html>
