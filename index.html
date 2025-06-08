@@ -10,6 +10,7 @@
       font-family: 'Noto Sans JP', sans-serif;
       line-height: 1.6;
       color: #333;
+      margin: 0;
     }
 
     .container {
@@ -40,7 +41,6 @@
       list-style: none;
     }
 
-    /* Googleフォームボタン */
     .btn-google-form {
       display: inline-block;
       background-color: #4285f4;
@@ -51,11 +51,11 @@
       font-weight: bold;
       transition: background-color 0.3s ease;
     }
+
     .btn-google-form:hover {
       background-color: #3367d6;
     }
 
-    /* Xリンク */
     .x-link {
       display: inline-flex;
       align-items: center;
@@ -64,67 +64,135 @@
       font-weight: bold;
       gap: 8px;
     }
+
     .x-link:hover {
       text-decoration: underline;
     }
+
     .x-icon {
       width: 24px;
       height: 24px;
     }
 
-    /* スマホ画面など幅480px以下のときの調整 */
-    @media (max-width: 480px) {
+    .portfolio-image {
+      max-width: 80%;
+      height: auto;
+      display: block;
+      margin: 0 auto;
+      background-color: #f0f0f0;
+      padding: 10px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      border-radius: 4px;
+    }
+
+    .note-card {
+      border: 1px solid #ddd;
+      padding: 15px 20px;
+      border-radius: 8px;
+      background-color: #fafafa;
+      margin-top: 20px;
+      transition: background-color 0.3s ease;
+    }
+
+    .note-card a {
+      text-decoration: none;
+      color: #333;
+      display: block;
+    }
+
+    .note-title {
+      font-size: 18px;
+      font-weight: bold;
+    }
+
+    .note-desc {
+      font-size: 14px;
+      margin-top: 8px;
+      color: #555;
+    }
+
+    .note-link {
+      color: #1DA1F2;
+      margin-top: 10px;
+      font-weight: bold;
+    }
+
+    .note-card:hover {
+      background-color: #f0f8ff;
+    }
+
+    header {
+      text-align: center;
+      padding: 20px;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px 0;
+    }
+
+    /* ★ レスポンシブ対応（スマホ・タブレット） */
+    @media (max-width: 768px) {
+      h2 {
+        font-size: 1.2rem;
+        text-align: center;
+      }
+
+      .nav-menu {
+        flex-direction: column;
+        gap: 10px;
+        font-size: 16px;
+        align-items: center;
+      }
+
+      .portfolio-image {
+        max-width: 100%;
+        padding: 5px;
+      }
+
+      .btn-google-form {
+        width: 100%;
+        text-align: center;
+        padding: 12px 0;
+        font-size: 16px;
+      }
+
+      .x-link {
+        flex-direction: column;
+        font-size: 14px;
+        gap: 4px;
+      }
+
+      .note-card {
+        padding: 10px 15px;
+      }
+
+      .note-title {
+        font-size: 16px;
+      }
+
+      .note-desc {
+        font-size: 13px;
+      }
+
+      .note-link {
+        font-size: 14px;
+      }
+
+      header img {
+        width: 100px;
+        height: 100px;
+      }
+
       .container {
         padding: 0 15px;
       }
     }
-    .portfolio-image {
-  max-width: 80%;
-  height: auto;
-  display: block;
-  margin: 0 auto;
-  background-color: #f0f0f0;
-  padding: 10px;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-  border-radius: 4px;
-}
-/* NOTEカード風ウィジェット */
-.note-card {
-  border: 1px solid #ddd;
-  padding: 15px 20px;
-  border-radius: 8px;
-  background-color: #fafafa;
-  margin-top: 20px;
-  transition: background-color 0.3s ease;
-}
-.note-card a {
-  text-decoration: none;
-  color: #333;
-  display: block;
-}
-.note-title {
-  font-size: 18px;
-  font-weight: bold;
-}
-.note-desc {
-  font-size: 14px;
-  margin-top: 8px;
-  color: #555;
-}
-.note-link {
-  color: #1DA1F2;
-  margin-top: 10px;
-  font-weight: bold;
-}
-.note-card:hover {
-  background-color: #f0f8ff;
-}
-
   </style>
 </head>
 
 <body>
-  <header style="text-align: center; padding: 20px;">
+  <header>
     <img src="images/icon.jpg" alt="アイコン" style="width: 150px; height: 150px; border-radius: 50%;">
     <nav class="container">
       <ul class="nav-menu">
@@ -138,29 +206,19 @@
   <section id="about" class="container">
     <h2>自己紹介</h2>
     <p>奈良に暮らす、39歳のフリーランスです。</p>
-
-<p>これまで「言葉」を使った仕事を中心に活動してきましたが、現在は<strong>AIフルスタックエンジニア</strong>を目指して、新たな学びに取り組んでいます。</p>
-
-<p>きっかけは、福祉分野での実体験。
-制度や情報が複雑で届きにくい現状に対し、テクノロジーの力で誰かの「困った」を少しでも減らせたら——そんな想いから、コードを書き始めました。</p>
-
-<p>現在はHTML/CSSを入り口に、Webアプリ開発やAIの基礎を少しずつ積み重ねています。</p>
-
-<p>もともとはフリーライターとして、商品紹介やサービス案内の文章、チラシのコピー制作、個人のブランディングサポートなどを手がけてきました。
-「その人らしさ」や「自然体の魅力」を言葉で伝えることが得意です。</p>
-
-<p>これまでの実績には、通信会社のテレオペ業務で<strong>アップセル表彰</strong>を受けたことや、サプリメントOEM事業で<strong>月商1,000万円</strong>を達成した経験があります。
-また、フリーランス向けに<strong>「0→1」のブランディングコンサル</strong>を行っていた時期もありました。</p>
-
-<p>知人のパン屋さんのネットショップ制作では、素朴で温かな世界観を大切にしながら、Instagramウィジェットを組み込み、サイトに動きを加える工夫を施しました。
-その結果、<strong>カラーミー大賞にノミネート</strong>されたのは、今でも心に残る出来事です。</p>
-
-<p>これからは、「ことば」と「テクノロジー」の両方の視点を活かし、福祉や教育などの分野で役に立てる存在を目指していきます。</p>
-
-<p>日々の学びや気づきは、NOTEでも綴っています。
-ご興味があれば、ぜひのぞいてみてください。</p>
-
-
+    <p>これまで「言葉」を使った仕事を中心に活動してきましたが、現在は<strong>AIフルスタックエンジニア</strong>を目指して、新たな学びに取り組んでいます。</p>
+    <p>きっかけは、福祉分野での実体験。<br>
+    制度や情報が複雑で届きにくい現状に対し、テクノロジーの力で誰かの「困った」を少しでも減らせたら——そんな想いから、コードを書き始めました。</p>
+    <p>現在はHTML/CSSを入り口に、Webアプリ開発やAIの基礎を少しずつ積み重ねています。</p>
+    <p>もともとはフリーライターとして、商品紹介やサービス案内の文章、チラシのコピー制作、個人のブランディングサポートなどを手がけてきました。<br>
+    「その人らしさ」や「自然体の魅力」を言葉で伝えることが得意です。</p>
+    <p>これまでの実績には、通信会社のテレオペ業務で<strong>アップセル表彰</strong>を受けたことや、サプリメントOEM事業で<strong>月商1,000万円</strong>を達成した経験があります。</p>
+    <p>また、フリーランス向けに<strong>「0→1」のブランディングコンサル</strong>を行っていた時期もありました。</p>
+    <p>知人のパン屋さんのネットショップ制作では、素朴で温かな世界観を大切にしながら、Instagramウィジェットを組み込み、サイトに動きを加える工夫を施しました。<br>
+    その結果、<strong>カラーミー大賞にノミネート</strong>されたのは、今でも心に残る出来事です。</p>
+    <p>これからは、「ことば」と「テクノロジー」の両方の視点を活かし、福祉や教育などの分野で役に立てる存在を目指していきます。</p>
+    <p>日々の学びや気づきは、NOTEでも綴っています。<br>
+    ご興味があれば、ぜひのぞいてみてください。</p>
     <p>👉<a href="https://note.com/makoto39restart" target="_blank" rel="noopener noreferrer">NOTEはこちら</a></p>
   </section>
 
@@ -169,37 +227,32 @@
     <p>2016年カラーミー大賞ノミネート ※キャプチャーのみ</p>
     <div class="image-frame">
       <img src="images/hinemospan.jpg" class="portfolio-image" alt="ひねもすぱん">
-      
     </div>
   </section>
 
   <section id="contact" class="container">
     <h2>お問い合わせ</h2>
     <p>以下のボタンからお問い合わせください。</p>
-  
-      <a href="https://docs.google.com/forms/d/e/1FAIpQLSfk-fAKwCpL3YBgljheT7fDAppjokkpiCiG1la4qJ9huGhHyA/viewform?usp=dialog" target="_blank" rel="noopener noreferrer" class="btn-google-form">Googleフォームで問い合わせる</a>
-  
+    <a href="https://docs.google.com/forms/d/e/1FAIpQLSfk-fAKwCpL3YBgljheT7fDAppjokkpiCiG1la4qJ9huGhHyA/viewform?usp=dialog" target="_blank" rel="noopener noreferrer" class="btn-google-form">Googleフォームで問い合わせる</a>
     <p>または、Xでもお気軽にどうぞ！</p>
-  
-      <a href="https://twitter.com/makoto39restart" target="_blank" rel="noopener noreferrer" class="x-link">
-        <img src="images/icon.jpg" alt="Xのアイコン" class="x-icon" />
-        @makoto39restart
-      </a>
-  
-  </section>
-  <!-- NOTEセクション -->
-<section class="container">
-  <h2>NOTEも更新中です</h2>
-  <div class="note-card">
-    <a href="https://note.com/makoto39restart" target="_blank" rel="noopener noreferrer">
-      <div class="note-title">日々の気づきや言葉の仕事を綴っています</div>
-      <div class="note-desc">フリーランスとしての働き方、文章へのこだわりなどを発信中。</div>
-      <div class="note-link">▶ NOTEのプロフィールを見る</div>
+    <a href="https://twitter.com/makoto39restart" target="_blank" rel="noopener noreferrer" class="x-link">
+      <img src="images/icon.jpg" alt="Xのアイコン" class="x-icon" />
+      @makoto39restart
     </a>
-  </div>
-</section>
+  </section>
 
-  <footer class="container" style="text-align:center; padding:20px 0;">
+  <section class="container">
+    <h2>NOTEも更新中です</h2>
+    <div class="note-card">
+      <a href="https://note.com/makoto39restart" target="_blank" rel="noopener noreferrer">
+        <div class="note-title">日々の気づきや言葉の仕事を綴っています</div>
+        <div class="note-desc">フリーランスとしての働き方、文章へのこだわりなどを発信中。</div>
+        <div class="note-link">▶ NOTEのプロフィールを見る</div>
+      </a>
+    </div>
+  </section>
+
+  <footer class="container">
     &copy; 2025 まこと
   </footer>
 </body>
