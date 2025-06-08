@@ -1,3 +1,5 @@
+<!DOCTYPE html>
+<html lang="ja">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -8,6 +10,12 @@
       font-family: 'Noto Sans JP', sans-serif;
       line-height: 1.6;
       color: #333;
+    }
+
+    .container {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 0 20px;
     }
 
     h2 {
@@ -63,6 +71,13 @@
       width: 24px;
       height: 24px;
     }
+
+    /* スマホ画面など幅480px以下のときの調整 */
+    @media (max-width: 480px) {
+      .container {
+        padding: 0 15px;
+      }
+    }
   </style>
 </head>
 
@@ -78,75 +93,57 @@
     </nav>
   </header>
 
-  <!-- 以下省略 -->
-</body>
+  <section id="about" class="container">
+    <h2>自己紹介</h2>
+    <p>奈良に住む39歳のフリーライターです。</p>
+    <p>パートナーと猫3匹と一緒に暮らしながら、言葉を使った仕事を続けてきました。</p>
 
+    <p>いまは心身のペースを整えながら、できる範囲で言葉の仕事に関わっています。
+      フリーランスという形で、誰かの役に立てる文章を少しずつ積み重ねていけたらと思っています。</p>
 
-</header>
+    <p>これまでには、通信会社のテレオペ業務でアップセルの表彰を受けたり、
+      初めての自主セミナーで16名の参加をいただいたこともあります。
+      高校時代は赤点続きでしたが、半年間集中して勉強し、関西大学法学部に合格しました。</p>
 
+    <p>サプリのOEM商品で月商1000万円を達成したり、
+      フリーランス向けに「0→1のブランディングコンサル」をしていた時期もあります。
+      まだ言語化されていない強みを引き出し、自然体で伝わる見せ方を一緒に考えることが好きです。</p>
 
+    <p>たとえば、知人のパン屋さんのネットショップでは、
+      素朴であたたかい世界観を大事にしながら、Instagramのウィジェットを組み込み、動きを出すなどの工夫をしました。
+      その結果、カラーミー大賞にノミネートされたのは今でも嬉しい経験です。</p>
 
+    <p>こうした経験や日々の気づきは、NOTEでも綴っています。
+      「言葉」にまつわることや、フリーランスとしての働き方に興味がある方は、ぜひのぞいてみてください。</p>
 
- 
-<section id="about" class="container">
-  <h2>自己紹介</h2>
-  <p>奈良に住む39歳のフリーライターです。</p>
- パートナーと猫3匹と一緒に暮らしながら、言葉を使った仕事を続けてきました。
+    <p>👉<a href="https://note.com/makoto39restart" target="_blank" rel="noopener noreferrer">NOTEはこちら</a></p>
+  </section>
 
-<p>いまは心身のペースを整えながら、できる範囲で言葉の仕事に関わっています。
-フリーランスという形で、誰かの役に立てる文章を少しずつ積み重ねていけたらと思っています。</p>
+  <section id="portfolio" class="container">
+    <h2>ポートフォリオ</h2>
+    <p>2016年カラーミー大賞ノミネート ※キャプチャーのみ</p>
+    <div class="image-frame">
+      <img src="images/hinemospan.jpg" class="portfolio-image" alt="ひねもすぱん">
+    </div>
+  </section>
 
-<p>これまでには、通信会社のテレオペ業務でアップセルの表彰を受けたり、
-初めての自主セミナーで16名の参加をいただいたこともあります。
-高校時代は赤点続きでしたが、半年間集中して勉強し、関西大学法学部に合格しました。</p>
+  <section id="contact" class="container">
+    <h2>お問い合わせ</h2>
+    <p>以下のボタンからお問い合わせください。</p>
+    <p>
+      <a href="https://docs.google.com/forms/d/e/1FAIpQLSfk-fAKwCpL3YBgljheT7fDAppjokkpiCiG1la4qJ9huGhHyA/viewform?usp=dialog" target="_blank" rel="noopener noreferrer" class="btn-google-form">Googleフォームで問い合わせる</a>
+    </p>
+    <p>または、Xでもお気軽にどうぞ！</p>
+    <p>
+      <a href="https://twitter.com/makoto39restart" target="_blank" rel="noopener noreferrer" class="x-link">
+        <img src="images/icon.jpg" alt="Xのアイコン" class="x-icon" />
+        @makoto39restart
+      </a>
+    </p>
+  </section>
 
-<p>サプリのOEM商品で月商1000万円を達成したり、
-フリーランス向けに「0→1のブランディングコンサル」をしていた時期もあります。
-まだ言語化されていない強みを引き出し、自然体で伝わる見せ方を一緒に考えることが好きです。</p>
-
-<p>たとえば、知人のパン屋さんのネットショップでは、
-素朴であたたかい世界観を大事にしながら、Instagramのウィジェットを組み込み、動きを出すなどの工夫をしました。
-その結果、カラーミー大賞にノミネートされたのは今でも嬉しい経験です。</p>
-
-<p>こうした経験や日々の気づきは、NOTEでも綴っています。
-「言葉」にまつわることや、フリーランスとしての働き方に興味がある方は、ぜひのぞいてみてください。</p>
-
-<p>👉<a href="https://note.com/makoto39restart" target="_blank" rel="noopener noreferrer">NOTEはこちら</a></p>
-
-</section>
-
-<section id="portfolio" class="container">
-  <h2>ポートフォリオ</h2>
-  <p>2016年カラーミー大賞ノミネート ※キャプチャーのみ</p>
-  <div class="image-frame">
-    <img src="images/hinemospan.jpg" class="portfolio-image" alt="ひねもすぱん">
-
-  </div>
-</section>
-
-<section id="contact" class="container">
-  <h2>お問い合わせ</h2>
-
-  <p>
-    以下のボタンからお問い合わせください。
-  </p>
-  <p>
-<a href="https://docs.google.com/forms/d/e/1FAIpQLSfk-fAKwCpL3YBgljheT7fDAppjokkpiCiG1la4qJ9huGhHyA/viewform?usp=dialog" target="_blank" rel="noopener noreferrer" class="btn-google-form">Googleフォームで問い合わせる</a>
-  </p>
-
-  <p>または、Xでもお気軽にどうぞ！</p>
-  <p>
-    <a href="https://twitter.com/makoto39restart" target="_blank" rel="noopener noreferrer" class="x-link">
-      <img src="images/icon.jpg" alt="Xのアイコン" class="x-icon" />
-      @makoto39restart
-
-    </a>
-  </p>
-</section>
-
-
-
-  <footer>
+  <footer class="container" style="text-align:center; padding:20px 0;">
     &copy; 2025 まこと
   </footer>
 </body>
+</html>
