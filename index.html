@@ -17,7 +17,52 @@
       margin-bottom: 1rem;
     }
 
-    /* 他のスタイルもここに追加 */
+    .nav-menu {
+      display: flex;
+      justify-content: center;
+      list-style: none;
+      padding: 0;
+      margin: 20px 0;
+      gap: 30px;
+      font-size: 18px;
+      flex-wrap: wrap;
+    }
+
+    .nav-menu li {
+      list-style: none;
+    }
+
+    /* Googleフォームボタン */
+    .btn-google-form {
+      display: inline-block;
+      background-color: #4285f4;
+      color: white;
+      padding: 10px 20px;
+      border-radius: 6px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: background-color 0.3s ease;
+    }
+    .btn-google-form:hover {
+      background-color: #3367d6;
+    }
+
+    /* Xリンク */
+    .x-link {
+      display: inline-flex;
+      align-items: center;
+      color: #1DA1F2;
+      text-decoration: none;
+      font-weight: bold;
+      gap: 8px;
+    }
+    .x-link:hover {
+      text-decoration: underline;
+    }
+    .x-icon {
+      width: 24px;
+      height: 24px;
+    }
   </style>
 </head>
 
@@ -25,12 +70,17 @@
   <header style="text-align: center; padding: 20px;">
     <img src="images/icon.jpg" alt="アイコン" style="width: 150px; height: 150px; border-radius: 50%;">
     <nav class="container">
-  <ul class="nav-menu">
-    <li><a href="#about">自己紹介</a></li>
-    <li><a href="#portfolio">ポートフォリオ</a></li>
-    <li><a href="#contact">お問い合わせ</a></li>
-  </ul>
-</nav>
+      <ul class="nav-menu">
+        <li><a href="#about">自己紹介</a></li>
+        <li><a href="#portfolio">ポートフォリオ</a></li>
+        <li><a href="#contact">お問い合わせ</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- 以下省略 -->
+</body>
+
 
 </header>
 
@@ -81,14 +131,15 @@
     以下のボタンからGoogleフォームへアクセスしてお問い合わせください。
   </p>
   <p>
-    <a href="https://docs.google.com/forms/d/e/1FAIpQLSfk-fAKwCpL3YBgljheT7fDAppjokkpiCiG1la4qJ9huGhHyA/viewform?usp=dialog】/viewform" target="_blank" rel="noopener noreferrer" class="btn-google-form">Googleフォームで問い合わせる</a>
+https://docs.google.com/forms/d/e/1FAIpQLSfk-fAKwCpL3YBgljheT7fDAppjokkpiCiG1la4qJ9huGhHyA/viewform?usp=dialog
   </p>
 
   <p>または、Xでもお気軽にどうぞ！</p>
   <p>
     <a href="https://twitter.com/makoto39restart" target="_blank" rel="noopener noreferrer" class="x-link">
       <img src="images/x-icon.png" alt="Xのアイコン" class="x-icon" />
-      @あなたのアカウント
+      @makoto39restart
+
     </a>
   </p>
 </section>
