@@ -4,6 +4,9 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>まこと｜webX福祉の自己紹介サイト</title>
+    <title>まこと｜webX福祉の自己紹介サイト</title>
+  <meta name="description" content="奈良で暮らす39歳のフリーランス。文章とテクノロジーで福祉や教育に貢献したいと考えています。" />
+
 
   <!-- ▼ OG（Open Graph）タグ -->
   <meta property="og:title" content="まことの自己紹介HP" />
@@ -97,20 +100,19 @@
     }
 
     .x-link {
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
-      color: #1DA1F2;
-      text-decoration: none;
-      font-weight: bold;
-      gap: 8px;
-      margin-top: 10px;
-    }
+  display: inline-flex;
+  align-items: center;
+  text-decoration: none;
+  color: #1DA1F2;
+  font-weight: bold;
+  gap: 6px; /* アイコンとテキストの間隔 */
+}
 
-    .x-icon {
-      width: 24px;
-      height: 24px;
-    }
+.x-icon {
+  width: 20px;
+  height: 20px;
+}
+
 
     .note-card {
       border: 1px solid #ddd;
@@ -161,11 +163,7 @@
   display: block;
 }
 
-.main-header img {
-  width: 100%;
-  height: auto;
-  max-height: 400px;
-}
+
 
 @media (max-width: 768px) {
   .main-header img {
@@ -272,19 +270,13 @@
 <strong>これから目指すこと</strong>
 <p>これからは、「ことば」と「テクノロジー」の両方の視点を活かし、福祉や教育などの分野で役に立てる存在を目指していきます。</p>
 
-<p>日々の学びや気づきは、NOTEでも綴っています。</p>
-<p>ご興味があれば、ぜひのぞいてみてください。</p>
-
-
- <p><a href="https://note.com/makoto39restart" target="_blank">NOTEはこちら</a></p>
-
 
   </section>
 
   <!-- ポートフォリオ -->
   <!-- ポートフォリオ -->
 <section id="portfolio" class="container">
-  <h2>実績紹介</h2>
+  <h3>実績紹介</h3>
 
   <h3>MOTEHADA（モテハダ）</h3>
   <p>OEM企画〜販売まで一貫対応。青ヒゲ対策用の男性向け抑毛クリームとして、Amazonで高評価を獲得しています。</p>
@@ -302,31 +294,43 @@
 
   </div>
 
-  <h4>2016年カラーミーショップ主催のECサイトアワードにてノミネート。</h4>
-  <img src="images/hinemospan.jpg" class="portfolio-image" alt="ひねもすぱん" />
+  <h3>2016年カラーミーショップ主催のECサイトアワードにてノミネート。</h3>
+  <p>手作りのぬくもりが伝わるよう、写真・余白・配色にこだわりました。</p>
+  <img src="images/hinemospan.jpg" alt="カラーミー大賞キャプチャ画像" class="portfolio-image" />
+ 
+
 </section>
 
+ <section class="container">
+  <h3>カップルで一緒に取り組むダイエットをテーマに、共感型コンテンツを発信</h3>
+  <img src="images/instagram.jpg" alt="Instagramキャプチャ画像" class="portfolio-image" />
+  <a href="https://www.instagram.com/couple.diet/" target="_blank">▶ Instagramページを見る</a>
+ 
+
+</section>
 
   <!-- お問い合わせ -->
   <section id="contact" class="container">
     <h2>お問い合わせ</h2>
     <p>以下のボタンからお気軽にご連絡ください。</p>
     <a href="https://docs.google.com/forms/d/e/1FAIpQLSfk-fAKwCpL3YBgljheT7fDAppjokkpiCiG1la4qJ9huGhHyA/viewform?usp=dialog" target="_blank" class="btn-google-form">Googleフォームで問い合わせる</a>
+<p>または、Xでもどうぞ！</p>
+<a href="https://twitter.com/makoto39restart" target="_blank" class="x-link">
+  <svg
+    class="x-icon"
+    xmlns="http://www.w3.org/2000/svg"
+    fill="#1DA1F2"
+    viewBox="0 0 24 24"
+    role="img"
+    aria-label="X（旧Twitter）アイコン"
+  >
+    <path d="M6.94 2h4.26l3.06 5.29L18.5 2h3.6l-5.9 8.11L23 22h-4.26l-3.34-5.75L11.6 22H8l6.29-8.58L6 2z" />
+  </svg>
+  @makoto39restart
+</a>
 
-    <p>または、Xでもどうぞ！</p>
-    <a href="https://twitter.com/makoto39restart" target="_blank" class="x-link">
-<svg
-  class="x-icon"
-  xmlns="http://www.w3.org/2000/svg"
-  fill="#1DA1F2"
-  viewBox="0 0 24 24"
-  role="img"
-  aria-label="X（旧Twitter）アイコン"
->
-  <path d="M6.94 2h4.26l3.06 5.29L18.5 2h3.6l-5.9 8.11L23 22h-4.26l-3.34-5.75L11.6 22H8l6.29-8.58L6 2z" />
-</svg>
-      @makoto39restart
-    </a>
+
+
   </section>
 
   <!-- NOTE紹介 -->
@@ -338,6 +342,8 @@
         <div class="note-desc">フリーランスとしての働き方、文章、福祉との関わりなどを発信中</div>
       </a>
     </div>
+ 
+
   </section>
 
   <!-- フッター -->
