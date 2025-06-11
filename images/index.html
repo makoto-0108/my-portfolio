@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>まこと｜webX福祉の自己紹介サイト</title>
-    <title>まこと｜webX福祉の自己紹介サイト</title>
+  
   <meta name="description" content="奈良で暮らす39歳のフリーランス。文章とテクノロジーで福祉や教育に貢献したいと考えています。" />
 
 
@@ -83,6 +83,11 @@
       box-shadow: 0 4px 8px rgba(0,0,0,0.1);
       border-radius: 4px;
     }
+
+    .instagram-image {
+  max-width: 60%; /* 80%から少し小さく */
+}
+
 
     .btn-google-form {
       display: inline-block;
@@ -210,6 +215,17 @@
         padding: 10px 15px;
       }
     }
+
+    @media (min-width: 769px) {
+  .contact-links {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+  }
+}
+
   </style>
 </head>
 
@@ -273,10 +289,10 @@
 
   </section>
 
-  <!-- ポートフォリオ -->
+ 
   <!-- ポートフォリオ -->
 <section id="portfolio" class="container">
-  <h3>実績紹介</h3>
+  <h2>実績紹介</h2>
 
   <h3>MOTEHADA（モテハダ）</h3>
   <p>OEM企画〜販売まで一貫対応。青ヒゲ対策用の男性向け抑毛クリームとして、Amazonで高評価を獲得しています。</p>
@@ -303,7 +319,8 @@
 
  <section class="container">
   <h3>カップルで一緒に取り組むダイエットをテーマに、共感型コンテンツを発信</h3>
-  <img src="images/instagram.jpg" alt="Instagramキャプチャ画像" class="portfolio-image" />
+  <P>一緒に楽しく、ゆるく続けるヒントがここに！</P>
+<img src="images/instagram.jpg" alt="Instagramキャプチャ画像" class="portfolio-image instagram-image" />
   <a href="https://www.instagram.com/couple.diet/" target="_blank">▶ Instagramページを見る</a>
  
 
@@ -312,22 +329,15 @@
   <!-- お問い合わせ -->
   <section id="contact" class="container">
     <h2>お問い合わせ</h2>
-    <p>以下のボタンからお気軽にご連絡ください。</p>
-    <a href="https://docs.google.com/forms/d/e/1FAIpQLSfk-fAKwCpL3YBgljheT7fDAppjokkpiCiG1la4qJ9huGhHyA/viewform?usp=dialog" target="_blank" class="btn-google-form">Googleフォームで問い合わせる</a>
-<p>または、Xでもどうぞ！</p>
-<a href="https://twitter.com/makoto39restart" target="_blank" class="x-link">
-  <svg
-    class="x-icon"
-    xmlns="http://www.w3.org/2000/svg"
-    fill="#1DA1F2"
-    viewBox="0 0 24 24"
-    role="img"
-    aria-label="X（旧Twitter）アイコン"
-  >
-    <path d="M6.94 2h4.26l3.06 5.29L18.5 2h3.6l-5.9 8.11L23 22h-4.26l-3.34-5.75L11.6 22H8l6.29-8.58L6 2z" />
-  </svg>
-  @makoto39restart
+    <div class="contact-links">
+<a href="https://docs.google.com/forms/d/e/1FAIpQLSfk-fAKwCpL3YBgljheT7fDAppjokkpiCiG1la4qJ9huGhHyA/viewform?usp=dialog" target="_blank" class="btn-google-form">Googleフォームで問い合わせる</a>
+
+<a href="https://x.com/makoto39restart" class="x-link" target="_blank">
+  <img src="images/x-icon.jpg" alt="Xアイコン" class="x-icon" />
+  Xでつながる
 </a>
+</div>
+
 
 
 
@@ -346,9 +356,12 @@
 
   </section>
 
+
   <!-- フッター -->
-  <footer>
-    <p>&copy; 2025 Makoto. All rights reserved.</p>
-  </footer>
+<footer style="display: flex; align-items: center; gap: 10px; padding: 20px; background: #f3f3f3; justify-content: center; flex-wrap: wrap;">
+  <img src="images/icon.jpg" alt="プロフィールアイコン" style="width:40px; height:40px; border-radius:50%;">
+  <p style="margin: 0;">© 2025 Makoto Portfolio</p>
+</footer>
+
 </body>
 </html>
