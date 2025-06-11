@@ -216,28 +216,29 @@
       }
     }
 
-   @media (max-width: 768px) {
+  /* PC・タブレット（768px以上） */
+.contact-links {
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+/* スマホ用 */
+@media (max-width: 768px) {
   .contact-links {
-    display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
     gap: 15px;
-  }
-
-  .x-link {
-    display: flex;
-    justify-content: center;
     align-items: center;
-    width: 100%;
-    text-align: center;
+    justify-content: center;
   }
-
-  .x-icon {
-    width: 48px;
-    height: 48px;
+  .x-link {
+    width: 100%;
+    justify-content: center;
   }
 }
+
 
 
   </style>
