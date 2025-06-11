@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>まこと｜webX福祉の自己紹介サイト</title>
+<title>まこと｜Web×福祉｜自己紹介＆ポートフォリオ</title>
   
   <meta name="description" content="奈良で暮らす39歳のフリーランス。文章とテクノロジーで福祉や教育に貢献したいと考えています。" />
 
@@ -238,6 +238,27 @@
     justify-content: center;
   }
 }
+.navbar {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.nav-button {
+  text-decoration: none;
+  padding: 10px 20px;
+  background-color: #4CAF50; /* グリーン系 */
+  color: white;
+  border-radius: 25px; /* 丸みの強さ */
+  transition: background-color 0.3s;
+  font-weight: bold;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.nav-button:hover {
+  background-color: #45a049; /* ホバー時の色 */
+}
 
 
 
@@ -252,13 +273,11 @@
   </header>
 
   <!-- ナビメニュー -->
-  <nav class="container">
-    <ul class="nav-menu">
-      <li><a href="#about">自己紹介</a></li>
-      <li><a href="#portfolio">ポートフォリオ</a></li>
-      <li><a href="#contact">お問い合わせ</a></li>
-    </ul>
-  </nav>
+  <nav class="navbar">
+  <a href="#about" class="nav-button">自己紹介</a>
+  <a href="#portfolio" class="nav-button">ポートフォリオ</a>
+  <a href="#contact" class="nav-button">お問い合わせ</a>
+</nav>
 
   <!-- 自己紹介 -->
   <section id="about" class="container">
@@ -327,7 +346,7 @@
 
   <h3>2016年カラーミーショップ主催のECサイトアワードにてノミネート。</h3>
   <p>手作りのぬくもりが伝わるよう、写真・余白・配色にこだわりました。</p>
-  <img src="images/hinemospan.jpg" alt="カラーミー大賞キャプチャ画像" class="portfolio-image" />
+<img src="images/hinemospan.jpg" alt="カラーミー大賞にノミネートされたパン屋のネットショップのキャプチャ" />
  
 
 </section>
@@ -374,8 +393,12 @@
 
 
   <!-- フッター -->
-<footer style="display: flex; align-items: center; gap: 10px; padding: 20px; background: #f3f3f3; justify-content: center; flex-wrap: wrap;">
-  <p style="margin: 0;">© 2025 Makoto Portfolio</p>
+<footer>
+  <p>© 2025 Makoto Portfolio</p>
+  <div>
+    <a href="https://x.com/makoto39restart" target="_blank">X</a>｜ 
+    <a href="https://note.com/makoto39restart" target="_blank">note</a>
+  </div>
 </footer>
 
 </body>
