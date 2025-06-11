@@ -215,6 +215,17 @@
         padding: 10px 15px;
       }
     }
+
+    @media (min-width: 769px) {
+  .contact-links {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+  }
+}
+
   </style>
 </head>
 
@@ -318,22 +329,15 @@
   <!-- お問い合わせ -->
   <section id="contact" class="container">
     <h2>お問い合わせ</h2>
-    <p>以下のボタンからお気軽にご連絡ください。</p>
-    <a href="https://docs.google.com/forms/d/e/1FAIpQLSfk-fAKwCpL3YBgljheT7fDAppjokkpiCiG1la4qJ9huGhHyA/viewform?usp=dialog" target="_blank" class="btn-google-form">Googleフォームで問い合わせる</a>
-<p>または、Xでもどうぞ！</p>
-<a href="https://twitter.com/makoto39restart" target="_blank" class="x-link">
-  <svg
-    class="x-icon"
-    xmlns="http://www.w3.org/2000/svg"
-    fill="#1DA1F2"
-    viewBox="0 0 24 24"
-    role="img"
-    aria-label="X（旧Twitter）アイコン"
-  >
-    <path d="M6.94 2h4.26l3.06 5.29L18.5 2h3.6l-5.9 8.11L23 22h-4.26l-3.34-5.75L11.6 22H8l6.29-8.58L6 2z" />
-  </svg>
-  @makoto39restart
+    <div class="contact-links">
+<a href="https://docs.google.com/forms/d/e/1FAIpQLSfk-fAKwCpL3YBgljheT7fDAppjokkpiCiG1la4qJ9huGhHyA/viewform?usp=dialog" target="_blank" class="btn-google-form">Googleフォームで問い合わせる</a>
+
+<a href="https://x.com/makoto39restart" class="x-link" target="_blank">
+  <img src="images/x-icon.svg" alt="Xアイコン" class="x-icon" />
+  Xでつながる
 </a>
+</div>
+
 
 
 
